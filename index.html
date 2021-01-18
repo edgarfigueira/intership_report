@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="3d.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" 
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+
+<link rel="stylesheet" type="text/css" href="ZoomBar/stylesheets/L.Control.ZoomBar.css"/>
+
+<script type="text/javascript" src="ZoomBar/js/L.Control.ZoomBar.js"></script>
+
+
+
+
+    <title>3D Visualization - Edgar Figueira</title>
+
+    
+</head>
+<body>
+    <section>
+        <div class="headerprinc">
+        
+            <h1>3D Data Visualization </h1>
+            <h4>Internship Report - CEGOT</h4>
+            <footer>Edgar Figueira</footer>
+            
+            <p>This page it's an overview about 3D techniques applied in Territory Planning</p>
+            <div class="img">
+                
+                <a href="https://www.instagram.com/mapclub_/" target="blank"><p>Map Club Instagram</p><img src="img/LOGO.png" width="250" height="200" alt="img"></a>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <article>
+        <p>Those techniques can be used in LiDAR Airborne Raw Data to extract not only DTM's, DSM's and <br>
+            Canopy Height Models, but also extract buildings footprints and extrude buildings.</p>
+    </article>
+
+    <article>
+        <p>We can define two stages to understand how data and softwares can be used acording to take the best result from both.</p>
+        <h3>1</h3>
+        <p>First, not only the software capable of read Geographic Information but also softwares designed to improve Cartography (Risk, Thematic, Geologic). </p>
+        <h3>Plus</h3>
+        <h3>2</h3>
+        <p>Second, the data type that can be used and modulated in the different softwares using their geoprocessing tools. </p>
+        <h3>Equal</h3>
+        <p>The results from 1 and 2 are presented in this website using <em>Leaflet</em> Library and Videos to explain what you can do and where you can do it.</p>
+    </article>
+    <br>
+    <br>
+    <br>
+
+    <div id='princ'>
+        <div id="softwares">
+
+            <div class="arcgispro">
+                <h1>ArcGis Pro - 2.6</h1>
+                <h2>Modeled Data:</h2>
+                <p>Sattelite Data</p>
+                    
+                <p>LiDAR Airborne</p>
+                
+                    
+                
+            </div>
+
+            
+
+            <div class="ai">
+                <h1>Adobe Illustrator - 2020</h1>
+                <h2>Modeled Data:</h2>
+                <p>Final Results from ArcMap, ArcGis Pro 2.6</p>
+                <p>Ex.:Diagram Blocks;</p>
+            </div>
+
+            <div class="arcmapscene">
+                
+                <h1>ArcMap / Scene - 10.7.1</h1>
+                <h2>Modeled Data:</h2>
+                <p>Sattelite Data</p>
+                    
+                <p>LiDAR Airborne</p>
+            </div>
+        </div>
+
+        <div id="datatype">
+            <div class="satelitedata">
+                <h1>Sattelite Data</h1>
+                <ul><strong>Sattelite Data</strong>
+                    <li>Building Mosaics</li>
+                    <li>DTM's (Topographic and Bathymetric)</li>
+                    <li>Generate Streams and Watersheds</li>
+                    <li>Digital Surfaces (Slopes, Hillshades, Aspects)</li>
+                </ul>
+            </div>
+            <div class="lidar">
+                <h1>LiDAR Airborne</h1>
+                <ul><strong>LiDAR Airborne</strong>
+                    <li>Building LASDatasets</li>
+                    <li>DTM's, DSM's & nDSM's (Topographic)</li>
+                    <li>Extracting Buildings Footprints<ul>
+                        <li>Generating 3D features from footprints</li></ul></li>
+                    
+                    <li>Digital Surfaces (Slopes, Hillshades, Aspects)</li>
+                </ul>
+            </div>
+    </div>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+        <div id='vids'>
+            <video width="500" height="300" controls>
+                <source src="contents/Map_3D.mp4" type="video/mp4">
+            </video>
+       
+            <video width="500" height="300" controls>
+                <source src="contents/Map_insta3D.mp4" type="video/mp4">
+            </video>
+        </div>
+<br><br><br><br>
+
+
+
+
+    <div>
+        <h2>Web Geographic Information System - Projects Locations </h2>
+        <p>Here we can see some locations where my projects were based of.</p>
+    </div>
+    
+    <div id="mapa"></div>
+    
+
+
+<!-----------------------Leaflet----------------------->
+    <script src="3d.js"></script>
+    
+<!----------------------------------------------------->
+</body>
+</html>
